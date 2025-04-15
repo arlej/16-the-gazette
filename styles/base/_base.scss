@@ -1,0 +1,33 @@
+// header
+// footer
+// page : home - about-us - contact
+// couleurs 
+// rouge : #ff0303 ; 
+// noir rgba(0, 0, 0, 0.75); 
+// gris #EFEFEF ; 
+// titres : #3a3a3a; 
+// texte :#3a3a3a
+// background-txt : #FFF;
+
+
+// FONT
+// roboto
+// titre articles, footer (sauf copyright) : PT serif
+// font-family: "PT Serif", serif;
+// font-family: "Roboto", sans-serif;
+
+html{
+    font-family: "Roboto", sans-serif;
+}
+
+h1{}
+h2, h3, h4{
+    font-family: "PT Serif", serif;
+}
+h3{}
+a{}
+
+.tag{
+    background-color: #ff0303;
+    text-transform: uppercase;
+}
