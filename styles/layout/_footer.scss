@@ -1,3 +1,8 @@
-.footer-nav a{
+.footer-link{
+    color: #9f9f9f;
+    transition: .3s all linear;
     font-family: "PT Serif", serif;
+}
+.footer-link:hover{
+    margin-left:5px;
 }

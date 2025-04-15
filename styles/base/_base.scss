@@ -6,7 +6,7 @@
 // noir rgba(0, 0, 0, 0.75); 
 // gris #EFEFEF ; 
 // titres : #3a3a3a; 
-// texte :#3a3a3a
+// texte :#9f9f9f
 // background-txt : #FFF;
 
 
@@ -18,16 +18,46 @@
 
 html{
     font-family: "Roboto", sans-serif;
+    color: #9f9f9f;
 }
 
-h1{}
-h2, h3, h4{
+
+h1, h2, h3, h4{
+    font-family: "PT Serif", serif;
+    color: #3a3a3a;
+}
+
+a{
+    text-decoration: none;
+    color: #3a3a3a;   
+}
+.s-serif{
     font-family: "PT Serif", serif;
 }
-h3{}
-a{}
 
-.tag{
+.link{
+    transition: .3s all linear;
+}
+.link:hover{
+    color:#ff0303;
+}
+
+.underlined{
+    border-bottom: 1px solid #e4e4e4;
+}
+.visiting{
+    color:#ff0303;
+}
+.date{
+    font-style: italic;
+    
+    & a{
+        color:#9f9f9f;
+    }
+}
+.tag a{
     background-color: #ff0303;
     text-transform: uppercase;
+    padding:5px;
+    color:#FFFFFF;
 }
