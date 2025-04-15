@@ -8,6 +8,7 @@
 // titres : #3a3a3a; 
 // texte :#9f9f9f
 // background-txt : #FFF;
+// border : #e4e4e4
 
 
 // FONT
@@ -26,7 +27,11 @@ h1, h2, h3, h4{
     font-family: "PT Serif", serif;
     color: #3a3a3a;
 }
-
+h2{
+    font-size: 2rem;
+    font-weight: normal;
+    padding: 10px 0px;
+}
 a{
     text-decoration: none;
     color: #3a3a3a;   
@@ -37,6 +42,8 @@ a{
 
 .link{
     transition: .3s all linear;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 .link:hover{
     color:#ff0303;
@@ -55,9 +62,26 @@ a{
         color:#9f9f9f;
     }
 }
+.wrapper{
+    max-width: 1140px;
+    margin:auto;
+    padding:0px 20px;
+
+    @media screen and (min-width:570px) {
+        padding:0px 80px;
+    }
+    @media screen and (min-width:770px) {
+
+    }
+    @media screen and (min-width:990px) {
+
+    }
+
+}
 .tag a{
     background-color: #ff0303;
     text-transform: uppercase;
     padding:5px;
     color:#FFFFFF;
+    font-size: .8rem;
 }

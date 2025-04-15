@@ -1,23 +1,53 @@
-header{
+.logo{
+    padding: 60px 0px;
+    width: 250px;
+
+    @media screen and (min-width:990px) {
+        padding: 60px 0px;
+        width: 350px;
+    }
+}
+.wrapper-nav{
     display: flex;
-    flex-direction: column;
-}
-.logo, .wrapper-nav{
-    width: 1140px;
-    margin:auto;
-}
-.logo{   
-    padding:40px 0px;
-}
-.main-nav, .search{
-    visibility: hidden;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1140px;
+    padding: 0px 80px;
+
+    @media screen and (min-width:990px) {
+        padding: 10px 0px;
+    }
+
+    & .link{
+        padding:8px;
+    }
 }
 
+.main-nav, .search{
+    display:none;
+
+    @media screen and (min-width:990px) {
+        display: initial;
+
+    }
+}
+
+.header-bottom{
+    border-top: 1px solid #e4e4e4;
+}
 .burger-menu{
     width: 120px;
     background-color: #ff0303;
     text-transform: uppercase;
     padding:5px 20px;
+    border-radius: 10px;
+    margin: 10px 0px;
+
+    @media screen and (min-width:990px) {
+        display: none;
+        padding: 10px 40px;
+    }
+
     & a{
         display: flex;
         flex-direction: row;
