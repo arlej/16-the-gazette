@@ -20,6 +20,7 @@
 html{
     font-family: "Roboto", sans-serif;
     color: #9f9f9f;
+    font-weight:300;
 }
 
 
@@ -28,7 +29,7 @@ h1, h2, h3, h4{
     color: #3a3a3a;
 }
 h2{
-    font-size: 2rem;
+    font-size: 2.8rem;
     font-weight: normal;
     padding: 10px 0px;
 }
@@ -36,8 +37,11 @@ a{
     text-decoration: none;
     color: #3a3a3a;   
 }
-.s-serif{
+.serif{
     font-family: "PT Serif", serif;
+}
+.s-serif{
+    font-family: "Roboto", sans-serif;
 }
 
 .link{
@@ -74,7 +78,7 @@ a{
 
     }
     @media screen and (min-width:990px) {
-
+        padding:0px;
     }
 
 }
@@ -84,4 +88,36 @@ a{
     padding:5px;
     color:#FFFFFF;
     font-size: .8rem;
+}
+.socials{
+    display: flex;
+    align-items: center;
+
+    & img{
+        width:75%;
+        padding-right:5px;
+        filter: saturate(0%) brightness(180%);
+    }
+    & img:hover{
+        filter: unset;
+    }
+}
+
+.btn{
+    border: 1px solid #000;
+    text-transform: uppercase;
+    padding:15px 20px;
+    transition: .3s all linear;
+    &:hover{
+        color:#ff0303;
+        border-color: #ff0303;
+    }
+}
+
+.comments{
+    font-weight: bold;
+    font-size: .75rem;
+    color: #3a3a3a;
+    text-transform: uppercase;
+    margin: 10px 0px;
 }
